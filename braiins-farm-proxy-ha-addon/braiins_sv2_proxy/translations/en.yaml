@@ -1,0 +1,7 @@
+configuration:
+  web_password:
+    name: Web interface password
+    description: Password for the web interface on port 8080 (user "admin"). If empty, the web interface is not exposed.
+network:
+  3333/tcp: Port for your miners
+  8080/tcp: Web interface (password protected)

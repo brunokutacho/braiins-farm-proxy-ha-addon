@@ -1,0 +1,22 @@
+name: "Braiins Farm Proxy (SV2)"
+version: "0.1.2"
+slug: braiins_sv2_proxy
+description: "Unofficial add-on: Braiins Farm Proxy with Stratum V2 upstream, to protect your miners against hashrate hijacking."
+url: "https://academy.braiins.com/farm-proxy/sv2-proxy/"
+arch:
+  - aarch64
+  - amd64
+init: false
+startup: services
+boot: auto
+ports:
+  3333/tcp: 3333
+  8080/tcp: 8080
+ports_description:
+  3333/tcp: "Port for your miners"
+  8080/tcp: "Web interface (password protected)"
+webui: "http://[HOST]:[PORT:8080]"
+options:
+  web_password: ""
+schema:
+  web_password: "password?"

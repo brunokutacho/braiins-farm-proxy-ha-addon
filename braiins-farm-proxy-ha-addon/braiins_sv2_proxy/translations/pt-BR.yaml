@@ -1,0 +1,7 @@
+configuration:
+  web_password:
+    name: Senha da interface web
+    description: Senha da interface web na porta 8080 (usuário "admin"). Se vazia, a interface web não é exposta.
+network:
+  3333/tcp: Porta para as suas mineradoras
+  8080/tcp: Interface web (protegida por senha)

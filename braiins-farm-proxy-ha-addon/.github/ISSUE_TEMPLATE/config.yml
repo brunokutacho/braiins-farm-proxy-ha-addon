@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Problem with Braiins Farm Proxy itself
+    url: https://academy.braiins.com/farm-proxy/sv2-proxy/
+    about: This repository only packages the proxy as a Home Assistant add-on. Product questions belong to Braiins.

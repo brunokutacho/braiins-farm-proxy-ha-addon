@@ -1,0 +1,47 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please **remove personal data** from everything you paste:
+        account and worker names, IP addresses, passwords and keys.
+  - type: input
+    id: environment
+    attributes:
+      label: Home Assistant and hardware
+      placeholder: "e.g. Home Assistant OS on Raspberry Pi 5"
+    validations:
+      required: true
+  - type: input
+    id: addon_version
+    attributes:
+      label: Add-on version
+      placeholder: "e.g. 0.1.2"
+    validations:
+      required: true
+  - type: input
+    id: miners
+    attributes:
+      label: Miner model and firmware
+      placeholder: "e.g. model and firmware version"
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Add-on log
+      description: From the add-on's Log tab (personal data removed).
+      render: text
+  - type: checkboxes
+    id: redacted
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed personal data from this report.
+          required: true
